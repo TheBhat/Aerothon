@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>AIRBUS</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href=""/>
+    <link rel="stylesheet" href="static/css/materialize.min.css">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/materialize.min.js"></script>
+
+
+    <script>
+
+    </script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar-fixed">
+
+        <nav>
+            <div class="nav-wrapper">
+                <!--<div class="loading">-->
+                    <!--<div class="loading-bar"></div>-->
+                    <!--<div class="loading-bar"></div>-->
+                    <!--<div class="loading-bar"></div>-->
+                    <!--<div class="loading-bar"></div>-->
+                <!--</div>-->
+                <!--<span class="logo"><img src="static/img/Airbus_white.png" alt="AIRBUS"></span>-->
+                <a href="#!" id="trigger_sidenav" class="brand-logo" style="margin:  1px 0 0 1%;"><i class="material-icons md-48">menu</i></a>
+                <a href="#!" class="brand-logo" style="margin:  1px 0 0 8%;"><i class="material-icons md-48">airplanemode_active</i>AIR-BUZZ</a>
+                <div class="searchicon"><i class="material-icons active ">search</i></div>
+                <div class="input-field col s12">
+                    <input list="dlsearchbar" id="searchbar" type="search" placeholder="Enter a aircraft model">
+                    <datalist id="dlsearchbar"></datalist>
+                </div>
+                <a href="#" id="location" style="right: 2%;" class="waves-effect waves-block waves-light right" title="my location"><i class="material-icons">my_location</i></a>
+                <!--<div class="pages">-->
+                    <!--<ul class="right">-->
+                        <!--<li><a href="#" class="waves-effect waves-block waves-light dvpage1 activepage"-->
+                               <!--title="Trading page"><i-->
+                                <!--class="material-icons">account_balance</i></a>-->
+                        <!--</li>-->
+                        <!--<li><a href="#" class="waves-effect waves-block waves-light dvpage2"-->
+                               <!--title="Back Test page"><i-->
+                                <!--class="material-icons">view_comfy</i></a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+
+
+
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+      <ul id="slide-out" id="sidebar" class="sidenav">
+        <li><a href="#!" class="brand-logo" style="margin:  1px 0 0 4%;"><i class="material-icons md-36">home</i>HOME</a></li>
+
+        <li> </li>
+        <li><a href="#!" class="brand-logo" style="margin:  1px 0 0 4%;"><i class="material-icons md-48">airplanemode_active</i>A320</a></li>
+        <li><a href="#!" class="brand-logo" style="margin:  1px 0 0 4%;"><i class="material-icons md-48">airplanemode_active</i>A330</a></li>
+        <li><a href="#!" class="brand-logo" style="margin:  1px 0 0 4%;"> <i class="material-icons md-48">airplanemode_active</i>A350</a></li>
+        <li><div class="divider"></div></li>
+            <li> </li>
+        <li><a href="#!" class="brand-logo" style="margin:  1px 0 0 4%;"><i class="material-icons md-48">search</i>SEARCH & FILTER</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger hide" ><i id ="sidenav-trigger" class="material-icons">menu</i></a>
+
+    <!--<div class="nav-collapse side-navigation-collapsed"-->
+        <!--style="position: fixed;">-->
+        <!--<div class="nav-panel">-->
+            <!--<div class="side-navigation">-->
+                <!--<div class="nav-wrapper">-->
+                    <!--<ul>-->
+                        <!--<li id="dv_sn_1" title='side nav 1'-->
+                            <!--class="active"><a class="waves-effect"><i-->
+                                <!--class="material-icons">dashboard</i><span>SIDE NAV 1</span></a></li>-->
+                        <!--<li id="dv_sn_2" title='side nav 2' ><a-->
+                            <!--class="waves-effect"><i class="material-icons">build</i><span>SIDE NAV 2</span></a></li>-->
+                         <!--<li id="dv_sn_3" title='side nav 3' class="active"><a-->
+                            <!--class="waves-effect "><i class="material-icons">view_headline</i><span>SIDE NAV 3</span></a></li>-->
+                        <!--<li id="dv_sn_4" title='side nav 4'><a-->
+                            <!--class="waves-effect"><i class="material-icons">assignment</i><span>SIDE NAV 4</span></a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;Modal structure starts&ndash;&gt;-->
+    <div id="dvkitesession" class="modal black-text modal-fixed-footer ">
+        <div class="modal-content">
+            <div class="row">
+                <ul id="kitesessiondetail" class="collection with-header">
+                    <li class="collection-header cyan">
+                        <h5 class="task-card-title"><i class="material-icons right modalkitesession">adjust</i><span>Some header</span>
+                        </h5>
+                    </li>
+                    <li class="collection-item">
+                        <b><span id="user_name"></span></b>
+                        <b><span class="right" id="user_id"></span></b>
+                    </li>
+                    <li class="collection-item">
+                        <div class="btncenter">
+                            <a id="btngetrequesttoken" class="waves-effect waves-light btn-large"><i
+                                    class="material-icons right">vpn_key</i>Request Token</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">CLOSE</a>
+        </div>
+    </div>
+    <!--Modal structure ends-->
+    <div id="preloader">
+        <div class="bounce_container">
+            <div class="bounce teal accent-4"></div>
+            <div class="bounce teal accent-4"></div>
+            <div class="bounce teal accent-4"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="content">
+            <div id="dvpage1" class="">
+                <div class="row">
+                    <div id="news" class="col s9 left" style="width: 78%;">
+
+                    </div>
+                    <div id="weather" class="col c12 m12 l12 right">
+                        <!--<button onclick="getLocation()">Try It</button>-->
+                        <!--<p id="demo"></p>-->
+                        <a id ="weatherwidget-io" class="weatherwidget-io" href="https://forecast7.com/en/12d9777d59/bengaluru/" data-label_1="BANGALORE" data-label_2="WEATHER" data-theme="original" >BANGALORE WEATHER</a>
+                    </div>
+                </div>
+            </div>
+            <div id="dvpage2" class="hide">
+               <div class="row" style="margin-bottom: 0px;">
+                    <div><i tabindex="0" class="material-icons right md-18 notification_tab_refresh">refresh</i>
+                    </div>
+                    <div class="col s12 m8 l12">
+                        <div class="card" style="overflow: hidden; width: 1062px;">
+                            <div id="notification_data" class="grid-container"
+                                style="margin-top: 5px; border-radius: 0.25rem; overflow: auto;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+<footer>
+    <nav>
+        <div class="container">
+            <span class="left">Copyright © 2019 All rights reserved.</span>
+            <div style="margin: auto;width: fit-content;">
+                <ul>
+                    <li><a target="_blank" href="https://www.airbus.com/"
+                           class="waves-effect waves-block waves-light" title="App"><i class="material-icons">card_membership</i></a>
+                    </li>
+                </ul>
+            </div>
+            <span class="right"> Design and Developed by theBhat</span>
+        </div>
+    </nav>
+</footer>
+<script src="static/js/common.js"></script>
+<script src="static/js/grid.js"></script>
+<script src="static/js/AppData.js"></script>
+<script src="static/js/dashboard.js"></script>
+</body>
+</html>

@@ -37,9 +37,9 @@
 
 body {
     display: flex;
-    min-height: 125vh;
+    min-height: 110.8vh;
     flex-direction: column;
-    zoom: 0.8;
+    zoom: 0.9;
 }
 
 main {
@@ -108,11 +108,7 @@ nav .nav-wrapper {
     border-radius: 7px;
     position: absolute;
 }
-span.logo{
-    position: absolute;
-    font-size: -webkit-xxx-large;
-    margin: -8px 0 0 12%;
-}
+
 main {
     background-color:#EDEDF1
 }
@@ -122,7 +118,6 @@ main .container{
     max-width: 90%;
     margin-top: 23px;
     border-radius: 10px;
-    min-height: 125%;
     margin-bottom: 23px;
 }
 .dvexchange {
@@ -130,12 +125,6 @@ main .container{
     position: absolute;
 }
 
-.nifty{
-    position:absolute;
-}
-.sensex {
-    margin-left: 185px;
-}
 .row{
     padding-top:10px;
     margin-bottom:0px !important;
@@ -263,3 +252,31 @@ small {
     margin-left:80%;
     position:absolute;
 }
+
+
+.weather{
+  animation: responsive 15s infinite;
+  animation-timing-function: ease-in-out;
+}
+#weather {
+    width: 20%;
+    margin-left: 1%;
+
+}
+
+@keyframes responsive {
+  0%, 100% {
+    width: 100%;
+  }
+  50% {
+    width: 110px;
+  }
+}
+
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
